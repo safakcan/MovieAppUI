@@ -1,0 +1,32 @@
+PODS:
+  - DeviceKit (4.5.2)
+  - Kingfisher (7.1.2)
+  - MADNetwork (0.3.5):
+    - DeviceKit (~> 4.5.0)
+
+DEPENDENCIES:
+  - Kingfisher (~> 7.0)
+  - MADNetwork (from `https://github.com/teammadduck/MADNetwork`)
+
+SPEC REPOS:
+  trunk:
+    - DeviceKit
+    - Kingfisher
+
+EXTERNAL SOURCES:
+  MADNetwork:
+    :git: https://github.com/teammadduck/MADNetwork
+
+CHECKOUT OPTIONS:
+  MADNetwork:
+    :commit: e07d9f8794facbf232b74abe118a990d1a219306
+    :git: https://github.com/teammadduck/MADNetwork
+
+SPEC CHECKSUMS:
+  DeviceKit: c622fc19f795f3e0b4d75d6d11b26604338cdab3
+  Kingfisher: 44ed6a8504763f27bab46163adfac83f5deb240c
+  MADNetwork: e9bd897eb48a63e47fc35b90bd7cf7d95c3f90ab
+
+PODFILE CHECKSUM: 1f9eb59c3d5e1e9e0de5e4ee21af0057abe21df3
+
+COCOAPODS: 1.11.2
