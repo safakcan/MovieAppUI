@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct PopularHorizontalCell: View {
+    
     var movie: Movie
+
     var body: some View {
         VStack(alignment: .leading) {
             ZStack {

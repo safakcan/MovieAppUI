@@ -46,6 +46,6 @@ class PopularViewModel: ObservableObject {
                 print(error.description ?? "")
             }
         }
-
     }
+    
 }

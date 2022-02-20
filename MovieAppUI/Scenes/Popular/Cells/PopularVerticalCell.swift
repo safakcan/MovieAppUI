@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct PopularVerticalCell: View {
+
     var movie: Movie
+    
     var body: some View {
             ZStack{
                 Rectangle()

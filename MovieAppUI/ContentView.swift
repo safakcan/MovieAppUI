@@ -27,6 +27,13 @@ struct ContentView: View {
                     Text("Search")
                 }
                 .tag(1)
+
+            MovieLibraryView()
+                .tabItem{
+                    Image(systemName: "magnifyingglass")
+                    Text("Library")
+            }
+                .tag(2)
         }
     }
     
@@ -34,5 +41,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(MovieLibrary())
     }
 }

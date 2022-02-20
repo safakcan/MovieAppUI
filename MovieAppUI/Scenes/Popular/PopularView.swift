@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct PopularView: View {
+    
     @ObservedObject private var viewModel = PopularViewModel()
 
     var body: some View {
