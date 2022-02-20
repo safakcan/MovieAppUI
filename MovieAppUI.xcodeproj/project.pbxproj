@@ -12,8 +12,6 @@
 		4675B1F827BFD21800F3A333 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4675B1F727BFD21800F3A333 /* ContentView.swift */; };
 		4675B1FA27BFD21900F3A333 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4675B1F927BFD21900F3A333 /* Assets.xcassets */; };
 		4675B1FD27BFD21900F3A333 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4675B1FC27BFD21900F3A333 /* Preview Assets.xcassets */; };
-		4675B1FF27BFD21900F3A333 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4675B1FE27BFD21900F3A333 /* Persistence.swift */; };
-		4675B20227BFD21900F3A333 /* MovieAppUI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4675B20027BFD21900F3A333 /* MovieAppUI.xcdatamodeld */; };
 		4675B20C27BFD21900F3A333 /* MovieAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4675B20B27BFD21900F3A333 /* MovieAppUITests.swift */; };
 		4675B21627BFD21900F3A333 /* MovieAppUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4675B21527BFD21900F3A333 /* MovieAppUIUITests.swift */; };
 		4675B21827BFD21900F3A333 /* MovieAppUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4675B21727BFD21900F3A333 /* MovieAppUIUITestsLaunchTests.swift */; };
@@ -65,8 +63,6 @@
 		4675B1F727BFD21800F3A333 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4675B1F927BFD21900F3A333 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4675B1FC27BFD21900F3A333 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		4675B1FE27BFD21900F3A333 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		4675B20127BFD21900F3A333 /* MovieAppUI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MovieAppUI.xcdatamodel; sourceTree = "<group>"; };
 		4675B20727BFD21900F3A333 /* MovieAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4675B20B27BFD21900F3A333 /* MovieAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieAppUITests.swift; sourceTree = "<group>"; };
 		4675B21127BFD21900F3A333 /* MovieAppUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieAppUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,8 +155,6 @@
 				4675B1F527BFD21800F3A333 /* MovieAppUIApp.swift */,
 				4675B1F727BFD21800F3A333 /* ContentView.swift */,
 				4675B1F927BFD21900F3A333 /* Assets.xcassets */,
-				4675B1FE27BFD21900F3A333 /* Persistence.swift */,
-				4675B20027BFD21900F3A333 /* MovieAppUI.xcdatamodeld */,
 				4675B1FB27BFD21900F3A333 /* Preview Content */,
 			);
 			path = MovieAppUI;
@@ -550,13 +544,11 @@
 				4675B22F27BFD37600F3A333 /* PopularMovieRequest.swift in Sources */,
 				4675B23E27C0263D00F3A333 /* MockData.swift in Sources */,
 				4675B24D27C2309A00F3A333 /* DetailView.swift in Sources */,
-				4675B1FF27BFD21900F3A333 /* Persistence.swift in Sources */,
 				4675B25227C2477F00F3A333 /* SearchViewModel.swift in Sources */,
 				4675B1F827BFD21800F3A333 /* ContentView.swift in Sources */,
 				4675B23427C0163500F3A333 /* PopularViewModel.swift in Sources */,
 				4675B24327C10C0400F3A333 /* PopularHorizontalCell.swift in Sources */,
 				4675B22C27BFD37600F3A333 /* NetworkUtils.swift in Sources */,
-				4675B20227BFD21900F3A333 /* MovieAppUI.xcdatamodeld in Sources */,
 				4675B22D27BFD37600F3A333 /* BaseUrl.swift in Sources */,
 				4675B25027C2473600F3A333 /* SearchView.swift in Sources */,
 				4675B1F627BFD21800F3A333 /* MovieAppUIApp.swift in Sources */,
@@ -899,19 +891,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		4675B20027BFD21900F3A333 /* MovieAppUI.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				4675B20127BFD21900F3A333 /* MovieAppUI.xcdatamodel */,
-			);
-			currentVersion = 4675B20127BFD21900F3A333 /* MovieAppUI.xcdatamodel */;
-			path = MovieAppUI.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 4675B1EA27BFD21800F3A333 /* Project object */;
 }

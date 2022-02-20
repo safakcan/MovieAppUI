@@ -19,8 +19,8 @@ struct SearchView: View {
                     ForEach(self.viewModel.movies!) { movie in
                         NavigationLink(destination: DetailView(movie: movie)) {
                             VStack(alignment: .leading) {
-                                Text(movie.title!)
-                                Text(movie.releaseDate!)
+                                Text(movie.title ?? "")
+                                Text(movie.releaseDate ?? "n/a")
                             }
                         }
                     }

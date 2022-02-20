@@ -25,7 +25,7 @@ class PopularViewModel: ObservableObject {
                    guard let self = self else {return}
                    switch response.result {
                    case .success(let result):
-                       guard let movieResult = result.results else { return }
+//                       guard let movieResult = result.results else { return }
 
                        switch type {
                        case .nowPlaying:
