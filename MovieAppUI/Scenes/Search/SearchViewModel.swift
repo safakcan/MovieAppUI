@@ -14,8 +14,13 @@ class SearchViewModel: ObservableObject {
 
     @Published var query = ""
     @Published var movies: [Movie]?
+    
     private var subscriptionToken: AnyCancellable?
+    private let router: RouterProtocol
 
+    init(router: RouterProtocol = Router()) {
+        self.router = router
+    }
     func startObserve() {
         guard subscriptionToken == nil else { return }
 
@@ -30,20 +35,19 @@ class SearchViewModel: ObservableObject {
 
     func search(query: String) {
         self.movies = nil
-
-        guard !query.isEmpty else {return}
+        guard !query.isEmpty else { return }
 
         let request = SearchMovieRequest(query: query)
-
-        NetworkManager.shared.execute(request: request, completion: { [weak self] response in
-            guard let self = self else {return}
-            switch response.result {
+        router.fetchSearch(request: request) { [weak self] response in
+            guard let self = self else { return }
+            switch response {
             case .success(let result):
-                self.movies = result.results
+                self.movies = result?.results
             case .failure(let error):
-                print(error)
+                print(error.description ?? "")
             }
-        })
+        }
+        
     }
 
     deinit {
