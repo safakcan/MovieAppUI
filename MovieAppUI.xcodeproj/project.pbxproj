@@ -281,7 +281,6 @@
 			isa = PBXGroup;
 			children = (
 				4675B25427C24CA200F3A333 /* SearchBarView.swift */,
-				4675B25E27C2BE0200F3A333 /* MovieLibrary.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -302,6 +301,7 @@
 			isa = PBXGroup;
 			children = (
 				4675B26127C2C28800F3A333 /* MovieLibraryView.swift */,
+				4675B25E27C2BE0200F3A333 /* MovieLibrary.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";

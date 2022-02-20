@@ -20,7 +20,7 @@ struct SearchView: View {
                         NavigationLink(destination: DetailView(movie: movie)) {
                             VStack(alignment: .leading) {
                                 Text(movie.title ?? "")
-                                Text(movie.releaseDate ?? "n/a")
+                                Text(movie.yearText)
                             }
                         }
                     }

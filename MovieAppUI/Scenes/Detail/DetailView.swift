@@ -17,11 +17,13 @@ struct DetailView: View {
             DetailImageView(movie: movie)
                 .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
             HStack {
-                Text(movie.releaseDate ?? "")
+                Text(movie.yearText)
             }
             Text(movie.overview)
             HStack {
                 //                Add starts
+                Text(movie.ratingText).padding()
+                Text(movie.scoreText)
                 //                Add vote average percentage
             }
             Button {

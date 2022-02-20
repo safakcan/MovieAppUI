@@ -19,7 +19,7 @@ class Movie: Codable {
     var overview : String
     private var posterPath : String?
     var releaseDate : String?
-    var voteAverage : Float?
+    var voteAverage : Double
     var posterImage : KFImage {
         KFImage.url(URL(string: NetworkUtils.posterPath + (posterPath ?? "")))
             .onSuccess { r in
@@ -28,6 +28,28 @@ class Movie: Codable {
                 ProgressView(p)
             }
     }
+    var ratingText: String {
+        let rating = Int(voteAverage)
+        let ratingText = (0..<rating).reduce("") { (acc,_) -> String in
+            return acc + "⭐️"
+        }
+        return ratingText
+    }
+
+    var scoreText: String {
+        guard ratingText.count > 0 else {
+            return "n/a"
+        }
+        return "\(ratingText.count)/10"
+    }
+    
+    var yearText: String {
+        guard let releaseDate = releaseDate, let date = NetworkUtils.dateFormatter.date(from: releaseDate) else {
+            return "n/a"
+        }
+        return NetworkUtils.yearFormatter.string(from: date)
+    }
+
         enum CodingKeys: String, CodingKey {
             case releaseDate = "release_date"
             case posterPath = "poster_path"

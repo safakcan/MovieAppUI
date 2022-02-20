@@ -27,7 +27,7 @@ struct MovieLibraryView: View {
                     .frame(width: 150, height: 150)
                     VStack(alignment: .leading, spacing: 10) {
                         Text(movie.title ?? "")
-                        Text(movie.releaseDate ?? "")
+                        Text(movie.yearText)
                     }
                 }
             }

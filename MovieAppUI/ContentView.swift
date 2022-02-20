@@ -15,7 +15,7 @@ struct ContentView: View {
             PopularView()
                 .tabItem {
                     VStack {
-                        Image(systemName: "tv")
+                        Image(systemName: "tv.inset.filled")
                         Text("Movies")
                     }
                 }
@@ -30,7 +30,7 @@ struct ContentView: View {
 
             MovieLibraryView()
                 .tabItem{
-                    Image(systemName: "magnifyingglass")
+                    Image(systemName: "books.vertical.fill")
                     Text("Library")
             }
                 .tag(2)
